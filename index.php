@@ -1,4 +1,4 @@
-<?php require 'components/db.php'; ?>
+<?php require 'components/db.php';?>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -53,9 +53,20 @@
                     }
                     ?>
                 </table>
+                <div class="line">
+                    <hr class="line_dashed">
+                </div>
                 <div class="read_goods">
-                    <form action="" method="post">
-                        <p></p>
+                    <h2>Добавь новую позицию в таблицу</h2>
+                    <form action="vendor/create.php" method="post">
+                        <p>Название нового товара:</p>
+                        <input type="text" name="title">
+                        <p>Артикул нового товара:</p>
+                        <input type="number" name="articul">
+                        <p>Цена нового товара:</p>
+                        <input type="number" name="price">
+                       <br>
+                        <button type="submit" class="read_goods-button">Добавить в таблицу</button>
                     </form>
                 </div>
             </div>

@@ -37,6 +37,7 @@
 
  .header_title {
      font-size: 16px;
+     text-align: center;
  }
 
 
@@ -63,7 +64,7 @@
 
  .goods_table {
      text-align: center;
-      }
+ }
 
  th {
      padding: 10px;
@@ -71,10 +72,21 @@
      color: #fefffc;
  }
 
-td {
-    background:#caccc9;
+ td {
+     background: #caccc9;
  }
 
+ .read_goods {
+    padding-left: 20px;
+ }
+
+ .read_goods-button{
+    margin-top: 10px;
+    margin-left: 10px;
+    color:#d8ccd2;
+    background-color:#832b5b;
+
+ }
  .footer {
      width: 100%;
      min-height: 140px;
@@ -94,7 +106,7 @@ td {
      justify-content: flex-start;
  }
 
-.fio {
+ .fio {
      text-align: center;
      font-size: 6px;
      padding-top: 5px;
@@ -104,8 +116,11 @@ td {
 
  .for_main {
      min-height: 310px;
-     width: 50%;
      font-size: 18px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
  }
 
  .for_footer {
