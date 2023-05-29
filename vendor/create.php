@@ -9,11 +9,8 @@ function post_good_new()
 {
     global $db;
     $sql = "INSERT INTO `product` (`id`, `position`, `url`, `name`, `articul`, `price`, `currency_id`, `price_old`, `notice`, `content`, `visible`) VALUES (NULL, '0', NULL, '".$good_new_name."', '".$articul."', '".$price."', NULL, NULL, NULL, NULL, '1')";
-    $products = $db->query($sql);
-    return $products;
+    $db->query($sql);
 }
 post_good_new();
-/*
-mysqli_query($db, "INSERT INTO `product` (`id`, `position`, `url`, `name`, `articul`, `price`, `currency_id`, `price_old`, `notice`, `content`, `visible`) VALUES (NULL, '0', NULL, '$good_new_name', '$articul', '$price', NULL, NULL, NULL, NULL, '1')" );*/
 
 header('Location: ../');
